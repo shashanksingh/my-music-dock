@@ -103,6 +103,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'myMusicInCloud.urls'
 
 TEMPLATE_DIRS = (
+    join(ROOT_PATH, 'templates')
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -116,6 +117,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'upload',
+    'social_auth',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -144,3 +146,34 @@ LOGGING = {
         },
     }
 }
+
+
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.twitter.TwitterBackend',
+    'social_auth.backends.facebook.FacebookBackend',
+    'social_auth.backends.google.GoogleOAuthBackend',
+    'social_auth.backends.google.GoogleOAuth2Backend',
+    'social_auth.backends.google.GoogleBackend',
+    'social_auth.backends.yahoo.YahooBackend',
+    'social_auth.backends.contrib.linkedin.LinkedinBackend',
+    'social_auth.backends.contrib.flickr.FlickrBackend',
+    'social_auth.backends.OpenIDBackend',
+    'social_auth.backends.contrib.livejournal.LiveJournalBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.contrib.messages.context_processors.messages',
+    'social_auth.context_processors.social_auth_by_type_backends',
+)
+
+LOGIN_REDIRECT_URL = '/'
+
+try:
+    from local_settings import *
+except:
+    pass
