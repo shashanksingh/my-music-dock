@@ -1,7 +1,7 @@
 import Queue
 import time
-from station  import *
-from logger import *
+#from station  import *
+#from logger import *
 from threading import Thread
 from twisted.web import xmlrpc
 from twisted.internet import defer
@@ -13,8 +13,9 @@ import xmlrpclib
 stopFlag = False
 
 class Producer(Thread):
+    pass
 
-    def __init__(self,q):
+"""    def __init__(self,q):
         Thread.__init__(self)
         self.stations = []
         self.q = q
@@ -45,7 +46,7 @@ class Producer(Thread):
 #            time.sleep(1)
 #             print "Thread"
 
-
+"""
 class Echoer(xmlrpc.XMLRPC):
     """An example object to be published.
 
