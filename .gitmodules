@@ -1,0 +1,3 @@
+[submodule "DeeFuzzer"]
+	path = DeeFuzzer
+	url = git@github.com:shashanksingh/DeeFuzzer.git
