@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+/******* GENERAL RESET *******/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+ tfoot, thead, tr, th, td {
+border:0pt none;
+font-family:inherit;
+font-size: 100%;
+font-style:inherit;
+font-weight:inherit;
+margin:0pt;
+padding:0pt;
+vertical-align:baseline;
+}
+body{
+	background: #272727;
+	line-height:14px;
+	font-size: 12px;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	margin:0pt;
+	cursor:default;
+	overflow: hidden;
+}
+html,body{
+	height:100%;
+}
+.clear{
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+/******* GENERAL RESET *******/
+
+/******* CONTAINER *******/
+#container{
+	background: transparent url(images/instructions.jpg) no-repeat scroll left top;
+	margin:0 auto;
+	width: 1000px;
+	min-height: 100%;
+	padding:0;
+	position:relative;
+	text-align: center;
+}
+/******* /CONTAINER *******/
+/******* BAR *******/
+#barContainer{
+	background: #006cb7;
+	height: 118px;
+	color: #fff;
+	margin: -119px auto 0;
+	position:relative;
+	border-top: 1px solid #00c6ff;
+}
+#bar{
+	width: 1000px;
+	line-height: 118px;
+	margin: 0pt auto;
+}
+#bar #play{
+	float: left;
+	width: 100px;
+	background: transparent url(images/play.jpg) no-repeat scroll center 22px;
+}
+#bar #play a{
+	display: block;
+}
+#bar #song{
+	width: 800px;
+	float: left;
+	background: transparent url(images/barBackground.jpg) no-repeat scroll center top;
+	text-align: center;
+	font-size: 24px;
+	margin: 0pt auto;
+}
+#bar #song #previous{
+	float: left;
+	background: red;
+}
+#bar #song span.title{
+	margin: 0 15px 0 15px;
+}
+#bar #song #next{
+	float: left;
+	background: blue;
+}
+#bar #volume{
+	float: left;
+	width: 100px;
+	background: transparent url(images/vol3.jpg) no-repeat scroll center 22px;
+}
+/******* /BAR *******/

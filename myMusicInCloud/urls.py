@@ -1,10 +1,13 @@
 from django.conf.urls.defaults import patterns, include, url
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
 
-from upload.views import home, done, logout, error
+#from upload.views import home, done, logout, error
+from mainUi.views import mainPage
 
 urlpatterns = patterns('',
     # Examples:
@@ -15,9 +18,13 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', home, name='home'),
-    url(r'^done/$', done, name='done'),
-    url(r'^error/$', error, name='error'),
-    url(r'^logout/$', logout, name='logout'),
-    url(r'', include('social_auth.urls')),
+    url(r'^$',mainPage,name='mainPage'),
+    #url(r'^$', home, name='home'),
+    #url(r'^done/$', done, name='done'),
+    #url(r'^error/$', error, name='error'),
+    #url(r'^logout/$', logout, name='logout'),
+    #url(r'', include('social_auth.urls')),
 )
+
+urlpatterns += staticfiles_urlpatterns()
+
