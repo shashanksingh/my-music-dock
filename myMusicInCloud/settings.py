@@ -1,7 +1,10 @@
 # Django settings for my_music_in_cloud project.
+from os.path import abspath, dirname, basename, join
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+ROOT_PATH = abspath(dirname(__file__))
+PROJECT_NAME = basename(ROOT_PATH)
 
 ADMINS = (
      ('shashank singh', 'shashank@awaaz.me'),
@@ -116,7 +119,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'upload',
+    'mainUi',
     'social_auth',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
