@@ -94,8 +94,8 @@ a{
 
 #wikiControl {
 position:absolute; left:0px; top:0px;
-
 width: 40%;
+height:75%;
 border:3px solid #999;
 padding:1em;
 -moz-border-radius:8px;
@@ -111,6 +111,15 @@ background-image:-moz-linear-gradient(top,bottom,from(rgba(255,255,255,0.9)),col
 
 #playlistControl {
 width: 40%;
+height:75%;
 position:relative; left:500px;
+border:3px solid #999;
+padding:1em;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+-opera-border-radius:8px;
+-khtml-border-radius:8px;
+border-radius:8px;
+
 }
 /******* /BAR *******/
