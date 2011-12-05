@@ -93,6 +93,9 @@ a{
 }
 
 #wikiControl {
+position:absolute; left:0px; top:0px;
+
+width: 40%;
 border:3px solid #999;
 padding:1em;
 -moz-border-radius:8px;
@@ -101,12 +104,13 @@ padding:1em;
 -khtml-border-radius:8px;
 border-radius:8px;
 box-shadow:rgba(0,0,0,0.5) 0px 0px 24px; border-radius:12px;
-background-image:-webkit-gradient(linear, 0% 1%, 0% 95%, from(rgba(255,255,255,0.9)), to(rgba(64,64,64,0.9)), color-stop(.8,rgba(64,64,64,0.25)),color-stop(.25,rgba(32,32,32,0.5)));
+background-image:-webkit-gradient(linear, 0% 1%, 0% 95%, from(rgba(0,108,183,0.9)), to(rgba(64,64,64,0.9)), color-stop(.08,rgba(64,64,64,0.25)),color-stop(.1,rgba(32,32,32,0.5)));
 background-image:-moz-linear-gradient(top,bottom,from(rgba(255,255,255,0.9)),color-stop(80%, rgba(64,64,64,0.25)),color-stop(25%, rgba(32,32,32,0.5)),to(rgba(64,64,64,0.9)));
 
 }
 
 #playlistControl {
-
+width: 40%;
+position:relative; left:500px;
 }
 /******* /BAR *******/

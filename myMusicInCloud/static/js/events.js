@@ -13,6 +13,7 @@ var MoveTypes = { Up: 0, Right: 1, Down: 2, Left: 3 };
 
 var isIE = navigator.appName.toLowerCase().indexOf("explorer") > -1;
 
+/*
 document.body.onmousedown = function(e){
 	//When user clicks in the page, the click coords are captured
 	if(isIE)
@@ -69,7 +70,7 @@ function onMouseCaptured(moveType){
 			break;
 	}
 }
-
+*/
 //Captures the key press events
 document.onkeydown = function(e){
 	var ev = isIE?event:e;
