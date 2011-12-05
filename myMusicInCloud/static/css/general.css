@@ -37,7 +37,6 @@ a{
 
 /******* CONTAINER *******/
 #container{
-	background: transparent url(images/instructions.jpg) no-repeat scroll left top;
 	margin:0 auto;
 	width: 1000px;
 	min-height: 100%;
@@ -63,7 +62,7 @@ a{
 #bar #play{
 	float: left;
 	width: 100px;
-	background: transparent url(images/play.jpg) no-repeat scroll center 22px;
+	background: transparent url(/static/images/play.jpg) no-repeat scroll center 22px;
 }
 #bar #play a{
 	display: block;
@@ -71,7 +70,7 @@ a{
 #bar #song{
 	width: 800px;
 	float: left;
-	background: transparent url(images/barBackground.jpg) no-repeat scroll center top;
+	background: transparent url(/static/images/barBackground.jpg) no-repeat scroll center top;
 	text-align: center;
 	font-size: 24px;
 	margin: 0pt auto;
@@ -90,6 +89,24 @@ a{
 #bar #volume{
 	float: left;
 	width: 100px;
-	background: transparent url(images/vol3.jpg) no-repeat scroll center 22px;
+	background: transparent url(/static/images/vol3.jpg) no-repeat scroll center 22px;
+}
+
+#wikiControl {
+border:3px solid #999;
+padding:1em;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+-opera-border-radius:8px;
+-khtml-border-radius:8px;
+border-radius:8px;
+box-shadow:rgba(0,0,0,0.5) 0px 0px 24px; border-radius:12px;
+background-image:-webkit-gradient(linear, 0% 1%, 0% 95%, from(rgba(255,255,255,0.9)), to(rgba(64,64,64,0.9)), color-stop(.8,rgba(64,64,64,0.25)),color-stop(.25,rgba(32,32,32,0.5)));
+background-image:-moz-linear-gradient(top,bottom,from(rgba(255,255,255,0.9)),color-stop(80%, rgba(64,64,64,0.25)),color-stop(25%, rgba(32,32,32,0.5)),to(rgba(64,64,64,0.9)));
+
+}
+
+#playlistControl {
+
 }
 /******* /BAR *******/

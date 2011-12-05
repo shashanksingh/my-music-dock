@@ -45,7 +45,7 @@ var player = new (function(){
 			this.volume++;
 			var me = this;
 			$("#volume").fadeOut(200, function(){
-				$(this).css("backgroundImage", "url('css/images/vol" +  me.volume + ".jpg')");
+				$(this).css("backgroundImage", "url('/static/images/vol" +  me.volume + ".jpg')");
 			}).fadeIn(200);
 		}
 	}
@@ -55,7 +55,7 @@ var player = new (function(){
 			this.volume--;
 			var me = this;
 			$("#volume").fadeOut(200, function(){
-				$(this).css("backgroundImage", "url('css/images/vol" +  me.volume + ".jpg')");
+				$(this).css("backgroundImage", "url('/static/images/vol" +  me.volume + ".jpg')");
 			}).fadeIn(200);
 		}
 	}
@@ -65,9 +65,9 @@ var player = new (function(){
 		var me = this;
 		$("#play").fadeOut(200, function(){
 			if(me.status == 0)
-				$(this).css("backgroundImage", "url('css/images/pause.jpg')");
+				$(this).css("backgroundImage", "url('/static/images/pause.jpg')");
 			else
-				$(this).css("backgroundImage", "url('css/images/play.jpg')");
+				$(this).css("backgroundImage", "url('/static/images/play.jpg')");
 		}).fadeIn(200);
 	}
 });
