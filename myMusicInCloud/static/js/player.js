@@ -7,8 +7,14 @@
 
 //This is the class that interact with the interface
 var player = new (function(){
+    jQuery.getJSON("/static/api/wiki.json",function(data){
+        $("#wikiControl").html("<h1>"+data[0]+"</h1>");  
+        config.log("dasdsada"+data[0]);
+    });
 	//Simulate a playlist
-	this.playList = ["Cold Play - Fix you", "Madonna - Give it 2 me", "Mirror's Edge Theme Song - Still Alive", "Rihanna - Unfaithful with Lyrics"];
+	this.playList = ["Updating The List"];
+	jQuery.getJSON("/static/api/name.json",function(json){this.playlist=json;console.log(json); });
+    console.log(this.playlist)
 	//The song position
 	this.position = -1;
 	//The current volume

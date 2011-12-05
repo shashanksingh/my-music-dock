@@ -45,7 +45,6 @@ a{
 	text-align: center;
 }
 /******* /CONTAINER *******/
-/******* BAR *******/
 #barContainer{
 	background: #006cb7;
 	height: 118px;
@@ -86,6 +85,8 @@ a{
 	float: left;
 	background: blue;
 }
+
+
 #bar #volume{
 	float: left;
 	width: 100px;
