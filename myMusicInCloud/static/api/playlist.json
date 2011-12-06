@@ -1,1 +1,32 @@
-[{'title':"yellow", 'artist':'coldplay','cover':'http://http://upload.wikimedia.org/wikipedia/en/9/9b/Yellow_cover_art.JPG'},'title':'parachutes','artist':'coldplay','cover':'http://upload.wikimedia.org/wikipedia/en/5/57/Coldplayparachutesalbumcover.jpg'}]
+{
+	{  
+		"song": "Beilive",
+  		"artist": "Cher",
+		"cover": "http://userserve-ak.last.fm/serve/174s/69741272.png"
+	},
+	{
+		"song": "Beilive",
+  		"artist": "Cher",
+		"cover": "http://userserve-ak.last.fm/serve/174s/69741272.png"
+	},
+	{
+		"song": "Beilive",
+  		"artist": "Cher",
+		"cover": "http://userserve-ak.last.fm/serve/174s/69741272.png"
+	},
+	{
+		"song": "Beilive",
+  		"artist": "Cher",
+		"cover": "http://userserve-ak.last.fm/serve/174s/69741272.png"
+	},
+	{
+		"song": "Beilive",
+  		"artist": "Cher",
+		"cover": "http://userserve-ak.last.fm/serve/174s/69741272.png"
+	},
+	{
+		"song": "Beilive",
+  		"artist": "Cher",
+		"cover": "http://userserve-ak.last.fm/serve/174s/69741272.png"
+	}
+}

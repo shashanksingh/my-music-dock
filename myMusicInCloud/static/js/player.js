@@ -7,8 +7,10 @@
 
 //This is the class that interact with the interface
 var player = new (function(){
-    $("#wikiControl").html("<h1>"+jQuery.getJSON("/static/api/wiki.json")+"</h1>");  
-	
+    //$("#wikiControl").html("<h1>"+jQuery.getJSON("/static/api/wiki.json")+"</h1>");  
+    $(".title").html("Getting Information"); 
+    $.getJSON('/static/api/wiki.json', function(data) { $("#wikiControl").html(data["wiki"]);});   
+  	
     //The current volume
 	this.volume = 3;
 	//Status: 0:pause, 1:play
@@ -16,13 +18,17 @@ var player = new (function(){
 	
     //Jump to the next or first song if the it is in the last position
 	this.nextSong = function(){
-		$(".title").fadeOut(200, function(){"updating"}).fadeIn();
+        $.getJSON('/static/api/current.json',function(data){
+            $(".title").html(data["song"]);
+            })
 	}
 	
     //Jump to he previous or last song if it is in the first position
 	this.prevSong = function(){
-		$(".title").fadeOut(200, function(){
-		}).fadeIn();
+        $.getJSON('/static/api/current.json',function(data){
+            $(".title").html(data["song"]);
+            })  
+
 	}
 	
     //Increase the volume in one point
@@ -58,6 +64,10 @@ var player = new (function(){
 				$(this).css("backgroundImage", "url('/static/images/play.jpg')");
 		}).fadeIn(200);
 	}
+    
+    this.populatePlaylist = function() {
+    
+    }
 });
 
 //Starts playing :P
